@@ -95,10 +95,18 @@ body {
     text-decoration: none;
     color: var(--white);
     background-color: var(--grey-700);
+    cursor: pointer;
     transition: color 0.2s, background-color 0.2s;
 }
 
 .social-links__link:is(:hover, :focus) {
     color: var(--grey-700);
     background-color: var(--green);
+}
+
+@media (min-width: 426px) {
+    .social-links {
+        padding: 40px;
+        width: 384px;
+    }
 }
