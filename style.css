@@ -12,3 +12,93 @@
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: hsl(0, 0%, 8%);
 }
+
+html {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    height: 100dvh;
+    background-color: var(--grey-900);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    min-width: 327px;
+    max-width: 384px;
+    color: var(--white);
+    background-color: var(--grey-800);
+}
+
+.social-links__avatar {
+    border-radius: 50%;
+}
+
+.social-links__user-name,
+.social-links__user-location,
+.social-links__bio,
+.social-links__link {
+    color: var(--white);
+    line-height: 150%;
+}
+
+.social-links__user {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.social-links__user-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.social-links__user-location {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.social-links__bio {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.social-links__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    list-style: none;
+}
+
+.social-links__link {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey-700);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.social-links__link:is(:hover, :focus) {
+    color: var(--grey-700);
+    background-color: var(--green);
+}
